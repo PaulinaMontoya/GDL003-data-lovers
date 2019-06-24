@@ -1,8 +1,165 @@
 
+*{ /*quita bordes por defecto*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{/*ancho de encabezado*/
+    width: 100%;
+}
+nav{/*tamaño del menu del nav*/
+    margin: 0% auto;
+    width: 100%;
+}
+nav ul{/*que no aparezca el estilo de lista por defecto*/
+    list-style: none;
+}
+nav>ul{/*estilo tabla, tamaño y fondo del menu*/
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: #a9f536;
+    padding: 25px;
+}
+nav>ul li{/*formato de celda de menu*/
+    display: table-cell;
+    text-align: center;
+}
+nav>ul>li>a{/*estilo de texto de menu*/
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #326962;
+    text-decoration: none;
+}
+body{/*fondo de cuerpo y alineacion*/
+    background: #326962;
+    text-align: center;
+}
+.img-ram{/*logo de rick and morty, ajuste de tamaño*/
+    margin-top: -15%;
+    margin-bottom: -15%;
+    height: 40%;
+    width: 80%;
+}
+.intro{/*estilo de introduccion*/
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a9f536;
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+.go{/*estilo para boton de ir*/
+    background: #a9f536;
+    border-radius: 5px;
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    width: 230px;
+    color: #326962;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.season{/*estilo para botones de temporadas*/
+    background: #326962;
+    border-radius: 5px;
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    width: 230px;
+    color: #a9f536;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom-color: #a9f536; 
+}
+.season:hover{/*que cambie de color al pasar el mouse en botones de temporadas*/
+    background:#2c4a45; 
+}
+#chooseEpisode{/*medidas para opcion escoger*/
+   position: absolute;
+   padding-left: 40%;
+   padding-right: 40%;
+}
+.choose{/*estilo para escoger episodio*/
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    background:#a9f536;
+    color: #326962;
+    padding: 20px 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px; 
+}
+.chapter>li>a{/*estilo para opcion de capitulo*/
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #326962;
+    background: #a9f536;
+    text-decoration: none;
+    display: block;
+}
+.chapter {/*que no se vea estilo lista*/
+    list-style: none;
+}
+.chapter>li>a:hover{/*que cambie de color los capitulos al pasar el mouse*/
+    background: #2c4a45;
+}
+#order{/*estilo para orden por*/
+    font-family: 'Merriweather', serif;
+    font-weight: inherit;
+    padding: 70px 70px;
+    color: #a9f536; 
+}
+#order a{/*estilo para elementos dentro del orden*/
+    font-family: 'Merriweather', serif;
+    font-weight: inherit;
+    text-decoration: none;
+    padding:  20px 20px;
+    color: #a9f536;  
+}
+#order a:hover{/*que cambie de color los elementos dentro de orden*/
+    background: #2c4a45;
+    padding-block-start: 2%;
+}
+#data{/*estilo para estadistica*/
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 20px;
+}
+footer{/*fondo de pie de pagina*/
+    background: #a9f536;
+    font-family: 'Merriweather', serif;
+    color: #326962;
+}
+.link{/*estilo para link de pagina oficial*/
+    font-family: 'Merriweather', serif;
+    color: #326962;
+    font-size: 15px; 
+    text-decoration: none;
+}
+.link:hover{/*que cambie de color al pasar por el link*/
+    color: #2c4a45;
+}
+.linkGitHub a{/*estilo para link de colaboradoras*/
+    font-family: 'Merriweather', serif;
+    color: #326962;
+    font-size: 15px; 
+    text-decoration: none;
+}
+.linkGitHub a:hover{/*que cambie de color al pasar por el link*/
+    color: #2c4a45;
+
+
 
 @media screen and (max-width:620px) {
   /* For mobile phones: */
   body{
     background: red;
   }
+
 }

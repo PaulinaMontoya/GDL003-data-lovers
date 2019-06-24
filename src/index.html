@@ -1,19 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--menu del encabezado index y personajes-->
+  <header id="mainHeader">
+    <nav>
+      <ul>
+        <li><a href="#"> Index </a></li>
+        <li><a href="#"> Characters </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--index contenido-->
+    <div id="indexContent">
+      <img class="img-ram" src="https://cdn140.picsart.com/271010551004211.png?r1024x1024">
+      <p class="intro">On this page you can see all the characters<br> that there are in the series</p>
+      <!--boton para ver personajes-->
+      <button id="go" class="go">Go to see them</button>
+    </div>
+    <!--personajes contenido-->
+    <div id="charactersContent">
+      <button id="seasonOne" class="season">Season 1</button>
+      <button id="seasonTwo" class="season">Season 2</button>
+      <button id="seasonThree" class="season">Season 3</button>
+    </div>
+    <!--escoger capitulo-->
+    <div id="chooseEpisode">
+      <details>
+        <summary class="choose">Choose an episode </summary>
+        <ul class="chapter">
+          <li><a href="#">Chapter 1</a></li>
+          <li><a href="#">Chapter 2</a></li>
+          <li><a href="#">Chapter 3</a></li>
+          <li><a href="#">Chapter 4</a></li>
+          <li><a href="#">Chapter 5</a></li>
+          <li><a href="#">Chapter 6</a></li>
+          <li><a href="#">Chapter 7</a></li>
+          <li><a href="#">Chapter 8</a></li>
+          <li><a href="#">Chapter 9</a></li>
+          <li><a href="#">Chapter 10</a></li>
+          <li><a href="#">Chapter 11</a></li>
+          <li><a href="#">Chapter 12</a></li>
+          <li><a href="#">Chapter 13</a></li>
+          <li><a href="#">Chapter 14</a></li>
+          <li><a href="#">Chapter 15</a></li>
+          <li><a href="#">Chapter 16</a></li>
+          <li><a href="#">Chapter 17</a></li>
+          <li><a href="#">Chapter 18</a></li>
+          <li><a href="#">Chapter 19</a></li>
+          <li><a href="#">Chapter 20</a></li>
+          <li><a href="#">Chapter 21</a></li>
+          <li><a href="#">Chapter 22</a></li>
+          <li><a href="#">Chapter 23</a></li>
+          <li><a href="#">Chapter 24</a></li>
+          <li><a href="#">Chapter 25</a></li>
+          <li><a href="#">Chapter 26</a></li>
+          <li><a href="#">Chapter 27</a></li>
+          <li><a href="#">Chapter 28</a></li>
+          <li><a href="#">Chapter 29</a></li>
+          <li><a href="#">Chapter 30</a></li>
+          <li><a href="#">Chapter 31</a></li>
+        </ul>
+      </details>
+    </div>
+
+    <!--Orden de personajes-->
+    <div id="order">
+      <p>Order by:</p>
+      <a href="#">A-Z</a>
+      <a href="#">Z-A</a>
+    </div>
+    <!--data de personajes-->
+    <div id="data">
+      <p>There are x characters</p>
+    </div>
+  </main>
+  <!--Pie de pagina con link a pagina oficial y github de colaboradoras-->
+  <footer id="navFooter">
+    <ul>
+      <li>
+        <a class="link" href="http://www.adultswim.com/videos/rick-and-morty">rickandmorty.com</a>
+      </li>
+      <p>Coded by</p>
+      <li class="linkGitHub">
+        <a href="https://github.com/PaulinaMontoya/GDL003-data-lovers">Paulina Montoya</a> &
+        <a href="https://github.com/26erika/GDL003-data-lovers">Erika Sánchez</a>
+      </li>
+    </ul>
+  </footer>
+  <!--enlaces-->
+  <script src="./data/rickandmorty/rickandmorty.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
