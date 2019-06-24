@@ -1,3 +1,4 @@
+
 *{ /*quita bordes por defecto*/
     box-sizing: border-box;
     margin: 0;
@@ -152,4 +153,13 @@ footer{/*fondo de pie de pagina*/
 }
 .linkGitHub a:hover{/*que cambie de color al pasar por el link*/
     color: #2c4a45;
+
+
+
+@media screen and (max-width:620px) {
+  /* For mobile phones: */
+  body{
+    background: red;
+  }
+
 }
