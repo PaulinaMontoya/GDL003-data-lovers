@@ -12,28 +12,36 @@
 <body>
   <!--menu del encabezado index y personajes-->
   <header id="mainHeader">
-    <nav>
+    <nav >
       <ul>
-        <li><a href="#"> Index </a></li>
-        <li><a href="#"> Characters </a></li>
+        <li><a id="goIndex"  href="#"> Index </a></li>
+        <li><a id="goCharacters" href="#"> Characters </a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!--index contenido-->
-    <div id="indexContent">
-      <img class="img-ram" src="https://cdn140.picsart.com/271010551004211.png?r1024x1024">
+  <div id="indexContent">
+      <img  class="img-ram" src="https://cdn140.picsart.com/271010551004211.png?r1024x1024">
       <p class="intro">On this page you can see all the characters<br> that there are in the series</p>
       <!--boton para ver personajes-->
-      <button id="go" class="go">Go to see them</button>
-    </div>
+      <button class="enterCharacters" id="go">Go to see them</button>
+  </div>
+
+
     <!--personajes contenido-->
+  <div id="enterseasons">
+
+      <img class="img-ram" src="https://cdn140.picsart.com/271010551004211.png?r1024x1024">
+      <p class="intro">Choose the season to see the characters</p>
+
     <div id="charactersContent">
       <button id="seasonOne" class="season">Season 1</button>
       <button id="seasonTwo" class="season">Season 2</button>
       <button id="seasonThree" class="season">Season 3</button>
     </div>
     <!--escoger capitulo-->
+  <div id="dataCharacters">
     <div id="chooseEpisode">
       <details>
         <summary class="choose">Choose an episode </summary>
@@ -122,9 +130,8 @@
         </section>
       </section>
     </section>
-
-
-
+  </div>
+</div>
   </main>
   <!--Pie de pagina con link a pagina oficial y github de colaboradoras-->
   <footer id="navFooter">
