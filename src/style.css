@@ -57,7 +57,7 @@ body{/*fondo de cuerpo y alineacion*/
     margin-top: -5%;
     margin-bottom: 5%;
 }
-.go{/*estilo para boton de ir*/
+#go{/*estilo para boton de ir*/
     background: #a9f536;
     border-radius: 5px;
     font-family:'Merriweather', serif;
