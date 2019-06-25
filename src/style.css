@@ -5,6 +5,7 @@
 }
 header{/*ancho de encabezado*/
     width: 100%;
+    position: fixed;
 }
 nav{/*tamaño del menu del nav*/
     margin: 0% auto;
@@ -132,8 +133,7 @@ body{/*fondo de cuerpo y alineacion*/
 }
 footer{/*fondo de pie de pagina*/
     background: #a9f536;
-    font-family: 'Merriweather', serif;
-    color: #326962;
+    height: 100%;
 }
 .link{/*estilo para link de pagina oficial*/
     font-family: 'Merriweather', serif;
