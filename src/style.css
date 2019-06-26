@@ -1,4 +1,3 @@
-
 *{ /*quita bordes por defecto*/
     box-sizing: border-box;
     margin: 0;
@@ -103,7 +102,7 @@ body{/*fondo de cuerpo y alineacion*/
     border-radius: 5px;
 }
 
-.chapter>li>a{/*estilo para opcion de capitulo*/
+.chapter>li{/*estilo para opcion de capitulo*/
     font-family: 'Merriweather', serif;
     font-size: 20px;
     color: #326962;
@@ -114,7 +113,7 @@ body{/*fondo de cuerpo y alineacion*/
 .chapter {/*que no se vea estilo lista*/
     list-style: none;
 }
-.chapter>li>a:hover{/*que cambie de color los capitulos al pasar el mouse*/
+.chapter>li:hover{/*que cambie de color los capitulos al pasar el mouse*/
     background: #2c4a45;
 }
 #order{/*estilo para orden por*/
