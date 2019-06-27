@@ -12,21 +12,18 @@ const filtrado = () => {
 /*window.example = {
   example,
   filtrado
-};*/
+};
+*/
 
-
-window.fullData = {
-
-episodes:(shift, toCodi) => {
+//window.fullData = {
+//episodes:() => {
 
 
   let fullData = RICKANDMORTY.results;
 
   fullData.forEach((id) => {
-   console.window(id.name);
-   document.write()
+   console.log(id.name);
   });
+  //return fullData
+//};
 
-
-return fullData
-};
