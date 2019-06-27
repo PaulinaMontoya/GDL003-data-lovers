@@ -22,8 +22,12 @@ const filtrado = () => {
   let fullData = RICKANDMORTY.results;
 
   fullData.forEach((id) => {
-   console.log(id.name);
+      //console.log(id.episode);
+      
+    let showAllCharacters=document.getElementById("styleName");
+    showAllCharacters.innerHTML += id.name;
   });
+ //document.getElementById("data")=x;
   //return fullData
 //};
 
