@@ -33,7 +33,7 @@ const episode1 = document.getElementById("episode1");
    let listEpisodes1 = document.createElement("li");
    listEpisodes1.textContent = choose1;
 
-   episode1.appendChild(listEpisodes1);
+   episode1.appendChild(listEpisodes1)=window.fullData;
  }
 
   document.getElementById("mainHeader").style.display = "block";
