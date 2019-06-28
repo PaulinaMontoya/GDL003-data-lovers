@@ -47,7 +47,15 @@ document.getElementById("seasonOne").addEventListener("click", buttonSeason1);
 
 //Muestra data de personajes boton2
 const buttonSeason2 = () => {
+  let fullData = RICKANDMORTY.results;
 
+  fullData.forEach((id) => {
+      //console.log(id.episode);
+      
+    let showAllCharacters=document.getElementById("styleName");
+    console.log(showAllCharacters.innerHTML += id.name);
+    
+  });
 //AppendChild episodes
 const episode2 = document.getElementById("episode2");
 //new list

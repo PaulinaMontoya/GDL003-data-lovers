@@ -19,14 +19,15 @@ const filtrado = () => {
 //episodes:() => {
 
 
-  let fullData = RICKANDMORTY.results;
+/*  let fullData = RICKANDMORTY.results;
 
   fullData.forEach((id) => {
       //console.log(id.episode);
       
     let showAllCharacters=document.getElementById("styleName");
-    showAllCharacters.innerHTML += id.name;
-  });
+    console.log(showAllCharacters.innerHTML += id.name);
+    
+  });*/
  //document.getElementById("data")=x;
   //return fullData
 //};
