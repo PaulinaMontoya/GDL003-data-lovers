@@ -50,11 +50,15 @@ const buttonSeason2 = () => {
 let fullData = RICKANDMORTY.results;
 
     fullData.forEach((id) => {
-      //console.log(id.episode);
-      
-let showAllCharacters=document.getElementById("styleName");
-    showAllCharacters.innerHTML += "Name:"+ id.name + " Status:" + id.status + " Species:" + id.species + " Type:" + id.type + " Gender:" + id.gender +"<br>";
-    
+     
+let showAllCharacters= document.getElementById("styleCards");     
+let imageCharacters=document.createElement("IMG");
+    imageCharacters.setAttribute("src",id.image);
+    imageCharacters.setAttribute("width","200");
+    imageCharacters.setAttribute("height","200");
+    showAllCharacters.appendChild(imageCharacters);
+    showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
+    showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
   });
 //AppendChild episodes
 const episode2 = document.getElementById("episode2");
