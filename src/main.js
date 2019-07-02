@@ -9,6 +9,17 @@ const enter = () => {
   document.getElementById("enterseasons").style.display = "block";
   document.getElementById("indexContent").style.display = "none";
   document.getElementById("dataCharacters").style.display = "none";
+  const fullData =window.data.allCharacters();
+  fullData.forEach((id) => {
+    let showAllCharacters= document.getElementById("styleCards");  
+    let imageCharacters=document.createElement("IMG");
+      imageCharacters.setAttribute("src",id.image);
+      imageCharacters.setAttribute("width","200");
+      imageCharacters.setAttribute("height","200");
+      showAllCharacters.appendChild(imageCharacters);
+      showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
+      showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
+    });
 };
 
   document.getElementById("go").addEventListener("click", enter);
@@ -21,7 +32,7 @@ const index = () => {
 };
 
   document.getElementById("goIndex").addEventListener("click", index);
-
+  
 //Muestra data de personajes boton1
 const buttonSeason1 = () => {
 
@@ -46,22 +57,12 @@ let listEpisodes1 = document.createElement("li");
   document.getElementById("seasonOne").addEventListener("click", buttonSeason1);
 
 //Muestra data de personajes boton2
-const buttonSeason2 = () => {
-let fullData = RICKANDMORTY.results;
 
-    fullData.forEach((id) => {
-     
-let showAllCharacters= document.getElementById("styleCards");     
-let imageCharacters=document.createElement("IMG");
-    imageCharacters.setAttribute("src",id.image);
-    imageCharacters.setAttribute("width","200");
-    imageCharacters.setAttribute("height","200");
-    showAllCharacters.appendChild(imageCharacters);
-    showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
-    showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
-  });
+const buttonSeason2 = () => {
+  
 //AppendChild episodes
-const episode2 = document.getElementById("episode2");
+const episode2 =  document.getElementById("episode2");
+//document.getElementById("styleCards")
 //new list
 const episodeList2 = ["Chapter 12", "Chapter 13", "Chapter 14", "Chapter 15", "Chapter 16", "Chapter 17", "Chapter 18", "Chapter 19", "Chapter 20", "Chapter 21"];
     for(let choose2 of episodeList2){
@@ -70,7 +71,7 @@ let listEpisodes2 = document.createElement("li");
 
     episode2.appendChild(listEpisodes2);
  }
-
+ 
   document.getElementById("mainHeader").style.display = "block";
   document.getElementById("enterseasons").style.display = "block";
   document.getElementById("indexContent").style.display = "none";
