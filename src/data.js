@@ -38,13 +38,17 @@ const filtrado = () => {
     },
     orderZa:() =>{
       let names = RICKANDMORTY.results;
-      names.reverse((a, b) => {
-        if (a.name < b.name) 
+     let sortZa = names.reverse((a, b) => {
+        if (a.name < b.name) {
           return -1;
-        if (a.name > b.name)
+        }  
+        if (a.name > b.name) {
         return 1;
+      } else {
         return 0;
-      })
+      }
+    })
+    return sortZa;
     },
     filterAlive: () => {
       let alive = RICKANDMORTY.results;
@@ -61,7 +65,6 @@ const filtrado = () => {
       const statusUnknown = unknown.filter(filterUnknown => (filterUnknown.status == "unknown"))
       return statusUnknown;
     }
-
 
 };//Aqui termina window.data
  

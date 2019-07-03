@@ -9,29 +9,15 @@ const enter = () => {
   document.getElementById("dataCharacters").style.display = "none";
 };
 
-document.getElementById("az").addEventListener("click", () => {
-  let sortOrderAz=window.data.orderAz();
-  document.querySelector('#styleCards').innerHTML = '';
-  sortOrderAz.forEach((id) => {
-    let showAllCharacters= document.getElementById("styleCards");  
-    let imageCharacters=document.createElement("IMG");
-      imageCharacters.setAttribute("src",id.image);
-     // imageCharacters.setAttribute("width","200");
-      //imageCharacters.setAttribute("height","200");
-      showAllCharacters.appendChild(imageCharacters);
-      showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
-      showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
-    });
-  })
+
   //document.querySelector('#dataCharacters').innerHTML = sortOrderAz;
 //});
 
-let sortOrderZa=window.data.orderZa();
-document.getElementById("za").addEventListener("click", () => {
-  let sortOrderZa=window.data.orderZa();
-  document.querySelector('#dataCharacters').innerHTML = '';
-  document.querySelector('#dataCharacters').innerHTML = sortOrderZa;
-});
+//let sortOrderZa=window.data.orderZa();
+//document.getElementById("za").addEventListener("click", () => {
+//let sortOrderZa=window.data.orderZa();
+//document.querySelector('#dataCharacters').innerHTML = '';
+//document.querySelector('#dataCharacters').innerHTML = sortOrderZa;});
 
 //document.getElementById("az").addEventListener("click", () => {window.data.orderAz();});
 //console.log(sortOrder);
@@ -48,8 +34,39 @@ const index = () => {
   
 //Muestra data de personajes boton1
 const buttonSeason1 = () => {
+  document.getElementById("data").style.display = "none";
       //imprime toda la data
-  
+    document.getElementById("az").addEventListener("click", () => {
+    let sortOrderAz=window.data.orderAz();
+    document.querySelector('#styleCards').innerHTML = '';
+    sortOrderAz.forEach((id) => {
+      let showAllCharacters= document.getElementById("styleCards");  
+      let imageCharacters=document.createElement("IMG");
+        imageCharacters.setAttribute("src",id.image);
+       // imageCharacters.setAttribute("width","200");
+        //imageCharacters.setAttribute("height","200");
+        showAllCharacters.appendChild(imageCharacters);
+        showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
+        showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
+      });
+    })
+
+    document.getElementById("za").addEventListener("click", () => {
+      let sortOrderZa=window.data.orderZa();
+      document.querySelector('#styleCards').innerHTML = '';
+      sortOrderZa.forEach((id) => {
+        let showAllCharacters= document.getElementById("styleCards");  
+        let imageCharacters=document.createElement("IMG");
+          imageCharacters.setAttribute("src",id.image);
+         // imageCharacters.setAttribute("width","200");
+          //imageCharacters.setAttribute("height","200");
+          showAllCharacters.appendChild(imageCharacters);
+          showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
+          showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
+        });
+      })
+
+
   const fullData =window.data.allCharacters();
   fullData.forEach((id) => {
     let showAllCharacters= document.getElementById("styleCards");  
@@ -72,7 +89,7 @@ const buttonSeason1 = () => {
 //Muestra data de personajes boton2
 
 const buttonSeason2 = () => {
-
+  document.getElementById("order").style.display = "none";
   const fullData =window.data.filterAlive();
   fullData.forEach((id) => {
     let showAllCharacters= document.getElementById("styleCards");  
@@ -84,6 +101,8 @@ const buttonSeason2 = () => {
       showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
       showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
     });
+
+    
 
 //AppendChild episodes
 /*const episode2 =  document.getElementById("episode2");
@@ -106,7 +125,7 @@ let listEpisodes2 = document.createElement("li");
 
 //Muestra data de personajes boton3
 const buttonSeason3 = () => {
-
+  document.getElementById("order").style.display = "none";
   const fullData =window.data.filterDead();
   fullData.forEach((id) => {
     let showAllCharacters= document.getElementById("styleCards");  
@@ -127,18 +146,8 @@ const buttonSeason3 = () => {
   document.getElementById("dead").addEventListener("click", buttonSeason3);
 
 
-
-
-
-
-
-
-
-
-
-
   const buttonSeason4 = () => {
-
+    document.getElementById("order").style.display = "none";
     const fullData =window.data.filterUnknown();
     fullData.forEach((id) => {
       let showAllCharacters= document.getElementById("styleCards");  
