@@ -123,15 +123,18 @@ body{/*fondo de cuerpo y alineacion*/
     margin: 40px;
     color: #a9f536;
 }
-#order a{/*estilo para elementos dentro del orden*/
+.buttonorder{/*estilo para elementos dentro del orden*/
     text-decoration: underline;
     font-family: 'Merriweather', serif;
     font-weight: inherit;
     text-decoration: none;
-    padding:  20px 20px;
+    padding:  10px 10px;
     color: #a9f536;
+    background: #2c4a45;
+    margin-top: 10px;
+    border-color: none;
 }
-#order a:hover{/*que cambie de color los elementos dentro de orden*/
+.buttonorder a:hover{/*que cambie de color los elementos dentro de orden*/
     background: #2c4a45;
 }
 #data{/*estilo para estadistica*/

@@ -19,14 +19,16 @@ const enter = () => {
       showAllCharacters.appendChild(imageCharacters);
       showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
       showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
-
     });
-
 };
-//let sortOrder=window.data.sortData();
-document.getElementById("az").addEventListener("click", () => {
-  window.data.sortData();
- });
+
+//let sortOrderAz=window.data.orderAz();
+//document.getElementById("az").addEventListener("click", sortOrderAz);
+
+let sortOrderZa=window.data.orderZa();
+document.getElementById("za").addEventListener("click", sortOrderZa);
+
+//document.getElementById("az").addEventListener("click", () => {window.data.orderAz();});
 //console.log(sortOrder);
   document.getElementById("go").addEventListener("click", enter);
   document.getElementById("goCharacters").addEventListener("click", enter);

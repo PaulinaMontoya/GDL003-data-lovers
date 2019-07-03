@@ -18,23 +18,28 @@ const filtrado = () => {
  window.data = {
  
    allCharacters:() => {
-
-   fullData = RICKANDMORTY.results;
-  
-    return fullData;
+    fullData = RICKANDMORTY.results;
+      return fullData;
+      },
+      orderAz:() =>{
+      let names = RICKANDMORTY.results;
+      names.sort((a, b) => {
+        if (a.name < b.name) 
+          return -1;
+          if (a.name > b.name)
+        return 1;
+        return 0;
+      });
     },
-    sortData:() =>{
-
-    let names = RICKANDMORTY.results;
-
-    names.sort((a, b) => {
-      if (a.name < b.name) 
-        return -1;
+    orderZa:() =>{
+      let names = RICKANDMORTY.results;
+      names.reverse((a, b) => {
+        if (a.name < b.name) 
+          return -1;
         if (a.name > b.name)
-      return 1;
-      return 0;
-    });
-   
-    },
+        return 1;
+        return 0;
+      })
+    }
 };//Aqui termina window.data
  
