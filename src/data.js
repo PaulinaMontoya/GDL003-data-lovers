@@ -23,17 +23,18 @@ const filtrado = () => {
   
     return fullData;
     },
-    
+    sortData:() =>{
+
+    let names = RICKANDMORTY.results;
+
+    names.sort((a, b) => {
+      if (a.name < b.name) 
+        return -1;
+        if (a.name > b.name)
+      return 1;
+      return 0;
+    });
+   
+    },
 };//Aqui termina window.data
  
- //document.getElementById("data")=x;
-  //return fullData
-//};
-
- /*let fullData = RICKANDMORTY.results;
-
-  fullData.forEach((id) => {
-      //console.log(id.episode);
-      
-    let showAllCharacters=document.getElementById("styleName");
-    console.log(showAllCharacters.innerHTML += id.name);*/
