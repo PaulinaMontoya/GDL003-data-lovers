@@ -21,15 +21,20 @@ const filtrado = () => {
     fullData = RICKANDMORTY.results;
       return fullData;
       },
+
       orderAz:() =>{
       let names = RICKANDMORTY.results;
-      names.sort((a, b) => {
-        if (a.name < b.name) 
+      let sortAz = names.sort((a, b) => {
+        if (a.name < b.name) {
           return -1;
-          if (a.name > b.name)
+        }
+          if (a.name > b.name) {
         return 1;
+          } else {
         return 0;
+          }
       })
+      return sortAz;
     },
     orderZa:() =>{
       let names = RICKANDMORTY.results;
@@ -40,6 +45,23 @@ const filtrado = () => {
         return 1;
         return 0;
       })
+    },
+    filterAlive: () => {
+      let alive = RICKANDMORTY.results;
+      const statusAlive = alive.filter(filterAlive => (filterAlive.status == "Alive"))
+      return statusAlive;
+    },
+    filterDead: () => {
+      let dead = RICKANDMORTY.results;
+      const statusDead = dead.filter(filterDead => (filterDead.status == "Dead"))
+      return statusDead;
+    },
+    filterUnknown: () => {
+      let unknown = RICKANDMORTY.results;
+      const statusUnknown = unknown.filter(filterUnknown => (filterUnknown.status == "unknown"))
+      return statusUnknown;
     }
+
+
 };//Aqui termina window.data
  

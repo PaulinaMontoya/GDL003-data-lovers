@@ -73,10 +73,10 @@ body{/*fondo de cuerpo y alineacion*/
     background: #326962;
     border-radius: 5px;
     font-family:'Merriweather', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     height: 60px;
-    width: 30%;
+    width: 20%;
     color: #a9f536;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -137,6 +137,11 @@ body{/*fondo de cuerpo y alineacion*/
 .buttonorder a:hover{/*que cambie de color los elementos dentro de orden*/
     background: #2c4a45;
 }
+.buttonorder.active {
+    background-color: #666;
+    color: white;
+  }
+
 #data{/*estilo para estadistica*/
     font-family: 'Merriweather', serif;
     color: white;
