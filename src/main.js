@@ -1,5 +1,3 @@
-
-
   document.getElementById("indexContent").style.display = "block";
   document.getElementById("enterseasons").style.display = "none";
 
@@ -9,19 +7,27 @@ const enter = () => {
   document.getElementById("enterseasons").style.display = "block";
   document.getElementById("indexContent").style.display = "none";
   document.getElementById("dataCharacters").style.display = "none";
+  //imprime toda la data
+  
   const fullData =window.data.allCharacters();
   fullData.forEach((id) => {
     let showAllCharacters= document.getElementById("styleCards");  
     let imageCharacters=document.createElement("IMG");
       imageCharacters.setAttribute("src",id.image);
-      imageCharacters.setAttribute("width","200");
-      imageCharacters.setAttribute("height","200");
+     // imageCharacters.setAttribute("width","200");
+      //imageCharacters.setAttribute("height","200");
       showAllCharacters.appendChild(imageCharacters);
       showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
       showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
-    });
-};
 
+    });
+
+};
+//let sortOrder=window.data.sortData();
+document.getElementById("az").addEventListener("click", () => {
+  window.data.sortData();
+ });
+//console.log(sortOrder);
   document.getElementById("go").addEventListener("click", enter);
   document.getElementById("goCharacters").addEventListener("click", enter);
 
@@ -100,5 +106,7 @@ let listEpisodes3 = document.createElement("li");
   document.getElementById("dataCharacters").style.display = "block";
 };
 
+
   document.getElementById("seasonThree").addEventListener("click", buttonSeason3);
 
+  
