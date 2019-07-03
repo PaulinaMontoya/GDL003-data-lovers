@@ -29,7 +29,7 @@ const filtrado = () => {
           if (a.name > b.name)
         return 1;
         return 0;
-      });
+      })
     },
     orderZa:() =>{
       let names = RICKANDMORTY.results;
