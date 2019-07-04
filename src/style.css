@@ -42,20 +42,23 @@ body{/*fondo de cuerpo y alineacion*/
     text-align: center;
 }
 .img-ram{/*logo de rick and morty, ajuste de tamaño*/
-    margin-top: -15%;
-    margin-bottom: -15%;
-    height: 40%;
-    width: 80%;
-}
-.intro{/*estilo de introduccion*/
+    display: inline;
+    margin: 100px 0 80px 0;
+    width: 20%;
+ }
+ #img-logo {
+    margin-top: -300px;
+    margin-bottom: -80px;
+ }
+ .intro{/*estilo de introduccion*/
     font-family:'Merriweather', serif;
     font-size: 20px;
-    font-weight: bold;
-    color: #a9f536;
+    color: #fff;
     text-align: center;
     margin-top: -5%;
-    margin-bottom: 5%;
-}
+    margin-bottom: 0%;
+    letter-spacing: 1px;
+ }
 #go{/*estilo para boton de ir*/
     background: #a9f536;
     border-radius: 5px;
@@ -80,8 +83,9 @@ body{/*fondo de cuerpo y alineacion*/
     color: #a9f536;
     margin-top: 5%;
     margin-bottom: 5%;
+    letter-spacing: 1px;
     border-bottom-color: #a9f536;
-}
+ }
 .season:hover{/*que cambie de color al pasar el mouse en botones de temporadas*/
    background:#2c4a45;
 }
@@ -179,6 +183,10 @@ body{/*fondo de cuerpo y alineacion*/
 .imgcharacter{
   width: 100%;
 }
+.styleCards{
+  display: table;
+  overflow: hidden;
+}
 footer{/*fondo de pie de pagina*/
     width: 100%;
     background: #a9f536;
@@ -211,9 +219,14 @@ footer > ul {
 
 @media screen and (max-width:620px) {
   /* For mobile phones: */
-.season {
-  display: inline;
-  font-size: 16px;
-}
+  .season {
+    display: inline;
+    font-size: 14px;
+   }
+   .img-ram{/*logo de rick and morty, ajuste de tamaño*/
+      display: inline;
+      margin: 100px 0 20px 0;
+      width: 60%;
+   }
 
 }
