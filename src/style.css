@@ -45,12 +45,12 @@ body{/*fondo de cuerpo y alineacion*/
     display: inline;
     margin: 100px 0 80px 0;
     width: 20%;
- }
- #img-logo {
+}
+#img-logo {
     margin-top: -300px;
     margin-bottom: -80px;
- }
- .intro{/*estilo de introduccion*/
+}
+.intro{/*estilo de introduccion*/
     font-family:'Merriweather', serif;
     font-size: 20px;
     color: #fff;
@@ -58,7 +58,7 @@ body{/*fondo de cuerpo y alineacion*/
     margin-top: -5%;
     margin-bottom: 0%;
     letter-spacing: 1px;
- }
+}
 #go{/*estilo para boton de ir*/
     background: #a9f536;
     border-radius: 5px;
@@ -70,6 +70,7 @@ body{/*fondo de cuerpo y alineacion*/
     color: #326962;
     margin-top: 5%;
     margin-bottom: 5%;
+    letter-spacing: 1px;
 }
 .season{/*estilo para botones de temporadas*/
     display: inline;
@@ -85,7 +86,8 @@ body{/*fondo de cuerpo y alineacion*/
     margin-bottom: 5%;
     letter-spacing: 1px;
     border-bottom-color: #a9f536;
- }
+}
+
 .season:hover{/*que cambie de color al pasar el mouse en botones de temporadas*/
    background:#2c4a45;
 }
@@ -124,8 +126,8 @@ body{/*fondo de cuerpo y alineacion*/
     font-size: 20px;
     font-family: 'Merriweather', serif;
     font-weight: inherit;
-    margin: 40px;
-    color: #a9f536;
+    margin: 10px 0 20px 0;
+    color: #fff;
 }
 .buttonorder{/*estilo para elementos dentro del orden*/
     text-decoration: underline;
@@ -150,6 +152,7 @@ body{/*fondo de cuerpo y alineacion*/
     font-family: 'Merriweather', serif;
     color: white;
     font-size: 20px;
+    margin-bottom: 60px;
 }
 #cardscharacters{
     text-align: center;
@@ -183,10 +186,6 @@ body{/*fondo de cuerpo y alineacion*/
 .imgcharacter{
   width: 100%;
 }
-.styleCards{
-  display: table;
-  overflow: hidden;
-}
 footer{/*fondo de pie de pagina*/
     width: 100%;
     background: #a9f536;
@@ -217,16 +216,92 @@ footer > ul {
     color: #2c4a45;
 }
 
+
+
 @media screen and (max-width:620px) {
   /* For mobile phones: */
-  .season {
+.season {
+  display: inline;
+  font-size: 14px;
+}
+.img-ram{/*logo de rick and morty, ajuste de tamaño*/
     display: inline;
-    font-size: 14px;
-   }
-   .img-ram{/*logo de rick and morty, ajuste de tamaño*/
-      display: inline;
-      margin: 100px 0 20px 0;
-      width: 60%;
-   }
+    margin: 100px 0 20px 0;
+    width: 60%;
+}
+#img-logo {
+    width: 50%;
+    margin-top: -300px;
+    margin-bottom: -80px;
+}
+}
+
+@media screen and (max-width:375px) {
+    #img-logo {
+        width: 80%;
+        margin-top: -300px;
+        margin-bottom: -80px;
+    }
+
+    nav>ul{/*estilo tabla, tamaño y fondo del menu*/
+        display: inline;
+        overflow: hidden;
+        width: 100%;
+      /*  position: relative;  */
+        padding: 25px;
+    } 
+    nav{/*tamaño del menu del nav*/
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background: #a9f536;
+    }
+    .season{/*estilo para botones de temporadas*/
+        display: inline;
+        background: #326962;
+        border-radius: 5px;
+        font-family:'Merriweather', serif;
+        font-size: 18px;
+        font-weight: bold;
+        height: 60px;
+        width: 50%;
+        color: #a9f536;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        letter-spacing: 1px;
+        border-bottom-color: #a9f536;
+    }
+    nav{/*tamaño del menu del nav*/
+        margin: 0 auto;
+        width: 100%;
+        background: #a9f536;
+        padding: 8% 0 8% 0;
+    }
+    .buttonorder{/*estilo para elementos dentro del orden*/
+        text-decoration: underline;
+        font-family: 'Merriweather', serif;
+        font-weight: inherit;
+        text-decoration: none;
+        padding:  20px;
+        color: #a9f536;
+        background: #2c4a45;
+        margin-top: 10px;
+        border-color: none;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .linkGitHub a{/*estilo para link de colaboradoras*/
+        font-family: 'Merriweather', serif;
+        color: #326962;
+        font-size: 16px;
+        text-decoration: none;
+    }  
+    .link{/*estilo para link de pagina oficial*/
+        font-family: 'Merriweather', serif;
+        color: #326962;
+        font-size: 16px;
+        text-decoration: none;
+    }  
+
 
 }
