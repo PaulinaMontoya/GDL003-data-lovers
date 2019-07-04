@@ -47,7 +47,7 @@ const filtrado = () => {
       } else {
         return 0;
       }
-    })
+    });
     return sortZa;
     },
     filterAlive: () => {
