@@ -33,7 +33,7 @@ const filtrado = () => {
           } else {
         return 0;
           }
-      })
+      });
       return sortAz;
     },
     orderZa:() =>{
@@ -52,17 +52,17 @@ const filtrado = () => {
     },
     filterAlive: () => {
       let alive = RICKANDMORTY.results;
-      const statusAlive = alive.filter(filterAlive => (filterAlive.status == "Alive"))
+      const statusAlive = alive.filter(filterAlive => (filterAlive.status == "Alive"));
       return statusAlive;
     },
     filterDead: () => {
       let dead = RICKANDMORTY.results;
-      const statusDead = dead.filter(filterDead => (filterDead.status == "Dead"))
+      const statusDead = dead.filter(filterDead => (filterDead.status == "Dead"));
       return statusDead;
     },
     filterUnknown: () => {
       let unknown = RICKANDMORTY.results;
-      const statusUnknown = unknown.filter(filterUnknown => (filterUnknown.status == "unknown"))
+      const statusUnknown = unknown.filter(filterUnknown => (filterUnknown.status == "unknown"));
       return statusUnknown;
     }
 

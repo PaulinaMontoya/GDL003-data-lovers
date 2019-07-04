@@ -49,7 +49,7 @@ const buttonSeason1 = () => {
         showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
         showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
       });
-    })
+    });
 
     document.getElementById("za").addEventListener("click", () => {
       let sortOrderZa=window.data.orderZa();
@@ -64,7 +64,7 @@ const buttonSeason1 = () => {
           showAllCharacters.innerHTML +='<br>'+ id.name+'<br>'; 
           showAllCharacters.innerHTML +='Species: '+ id.species +'<br>'+'Gender: '+ id.gender +'<br>'+'Status: '+ id.status +'<br>'+'Type: '+ id.type +"<br>"; 
         });
-      })
+      });
 
 
   const fullData =window.data.allCharacters();
