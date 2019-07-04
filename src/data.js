@@ -64,7 +64,21 @@ const filtrado = () => {
       let unknown = RICKANDMORTY.results;
       const statusUnknown = unknown.filter(filterUnknown => (filterUnknown.status == "unknown"));
       return statusUnknown;
-    }
-
+    },
+    computeStatsAlive:() =>{
+    let data = RICKANDMORTY.results;
+    const statsAlive = data.filter(filterAlive => (filterAlive.status == "Alive"));
+      return statsAlive.length;
+    },
+    computeStatsDead:() =>{
+      let data = RICKANDMORTY.results;
+      const statsDead = data.filter(filterDead => (filterDead.status == "Dead"));
+        return statsDead.length;
+      },
+    computeStatsUnknown:() =>{
+      let data = RICKANDMORTY.results;
+      const statsUnknown = data.filter(filterUnknown => (filterUnknown.status == "unknown"));
+        return statsUnknown.length;
+      },
 };//Aqui termina window.data
  
