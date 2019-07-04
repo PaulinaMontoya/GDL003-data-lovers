@@ -39,5 +39,5 @@ Boceto 3
 ## Prototipos de alta fidelidad
 Nuestra propuesta de producto se muestra en el siguiente enlace y es nuestro prototipo de alta fidelidad con el que hicimos encuestas a usuarios, éstas encuestas nos ayudaron a tomar decisiones en los cambios que hicimos de contenido y diseño para mejorar la experiencia. En la esquina inferior izquierda existe un boton para visualizar los comentarios que nos dejaron algunos usuarios.
 
-![Prototipo-de-alta-fidelidad](https://marvelapp.com/75djbgj/screen/58440707)
+[Prototipo de alta fidelidad](https://marvelapp.com/75djbgj/screen/58440707)
 
