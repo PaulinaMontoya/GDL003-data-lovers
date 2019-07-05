@@ -37,7 +37,7 @@ const buttonAll = () => {
   document.getElementById("data").style.display = "none";
   //imprime toda la data
   document.getElementById("az").addEventListener("click", () => {
-    let sortOrderAz = window.data.orderAz();
+    let sortOrderAz = window.data.orderAz(RICKANDMORTY.results);
     document.querySelector('#styleCards').innerHTML = '';
     sortOrderAz.forEach((id) => {
       let showAllCharacters = document.getElementById("styleCards");
@@ -52,7 +52,7 @@ const buttonAll = () => {
   });
 
   document.getElementById("za").addEventListener("click", () => {
-    let sortOrderZa = window.data.orderZa();
+    let sortOrderZa = window.data.orderZa(RICKANDMORTY.results);
     document.querySelector('#styleCards').innerHTML = '';
     sortOrderZa.forEach((id) => {
       let showAllCharacters = document.getElementById("styleCards");
@@ -67,7 +67,7 @@ const buttonAll = () => {
   });
 
 
-  const fullData = window.data.allCharacters();
+  const fullData = window.data.allCharacters(RICKANDMORTY.results);
   fullData.forEach((id) => {
     let showAllCharacters = document.getElementById("styleCards");
     let imageCharacters = document.createElement("IMG");
@@ -90,7 +90,7 @@ document.getElementById("all").addEventListener("click", buttonAll);
 
 const buttonAlive = () => {
   document.getElementById("order").style.display = "none";
-  const fullData = window.data.filterAlive(),stastAlive = window.data.computeStatsAlive();
+  const fullData = window.data.filterAlive(RICKANDMORTY.results),stastAlive = window.data.computeStatsAlive(RICKANDMORTY.results);
   document.getElementById("data").innerHTML = "There are " + stastAlive + " characters";
   fullData.forEach((id) => {
     let showAllCharacters = document.getElementById("styleCards");
@@ -129,7 +129,7 @@ document.getElementById("alive").addEventListener("click", buttonAlive);
 //Muestra data de personajes boton3
 const buttonDead = () => {
   document.getElementById("order").style.display = "none";
-  const fullData = window.data.filterDead(),stastDead = window.data.computeStatsDead();
+  const fullData = window.data.filterDead(RICKANDMORTY.results),stastDead = window.data.computeStatsDead(RICKANDMORTY.results);
   document.getElementById("data").innerHTML = "There are " + stastDead + " characters";
   fullData.forEach((id) => {
     let showAllCharacters = document.getElementById("styleCards");
@@ -152,7 +152,7 @@ document.getElementById("dead").addEventListener("click", buttonDead);
 
 const buttonUnknown = () => {
   document.getElementById("order").style.display = "none";
-  const fullData = window.data.filterUnknown(),statsUnknown = window.data.computeStatsUnknown();
+  const fullData = window.data.filterUnknown(RICKANDMORTY.results),statsUnknown = window.data.computeStatsUnknown(RICKANDMORTY.results);
   document.getElementById("data").innerHTML = "There are " + statsUnknown + " characters";
   fullData.forEach((id) => {
     let showAllCharacters = document.getElementById("styleCards");
