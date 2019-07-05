@@ -1,3 +1,5 @@
+//global.window = global;
+//global.assert = require('chai').assert;
 require('../src/data.js');
 
 
@@ -20,20 +22,76 @@ require('../src/data.js');
     //expect(example.filtrado()).toBe('filtrado');
   //});
 //});
+describe('orderAz()', () => {
 
-describe('orderAz', () => {
-  it('it should return an array of alphabetically ordered objects', () => {
-    expect(typeof data.orderAz()).toBe(data.sort);
+  it('debería devolver true para letra a', () => {
+  });
+  it('debería devolver false para letra z', () => {
+  });
+describe('orderZa()', () => {
+
+  it('debería devolver true para letra z', () => {
+  });
+  it('debería devolver false para letra a', () => {
   });
 });
-describe('orderZa', () => {
-  it('it should return an array of alphabetically ordered objects', () => {
-    expect(data.orderZa()).toBe(data.sort);
+describe('filterAlive()', () => {
+
+  it('debería devolver true para letra "Alive"', () => {
   });
-  //console.log(data.orderZa());
+  it('debería devolver false para letra "Dead"', () => {
+  });
+  it('debería devolver false para letra "unknown"', () => {
+  });
 });
-describe('filterAlive', () => {
-  it('it should return a filter array', () => {
-    expect(data.filterAlive()).toBe(data.filter);
+describe('filterDead()', () => {
+
+  it('debería devolver true para letra "Dead"', () => {
   });
+  it('debería devolver false para letra "Alive"', () => {
+  });
+  it('debería devolver false para letra "unknown"', () => {
+  });
+});
+describe('filterUnknown()', () => {
+
+  it('debería devolver true para letra "unknown"', () => {
+  });
+  it('debería devolver false para letra "Alive"', () => {
+  });
+  it('debería devolver false para letra "Dead"', () => {
+  });
+});
+describe('computeStatsAll()', () => {
+
+  it('debería devolver true para letra "Alive","Dead","unknown"', () => {
+  });
+});
+describe('computeStatsAlive()', () => {
+
+  it('debería devolver true para letra "Alive"', () => {
+  });
+  it('debería devolver false para letra "Dead"', () => {
+  });
+  it('debería devolver false para letra "unknown"', () => {
+  });
+});
+describe('computeStatsDead()', () => {
+
+  it('debería devolver true para letra "Dead"', () => {
+  });
+  it('debería devolver false para letra "Alive"', () => {
+  });
+  it('debería devolver false para letra "unknown"', () => {
+  });
+});
+describe('computeStatsUnknown()', () => {
+
+  it('debería devolver true para letra "unknown"', () => {
+  });
+  it('debería devolver false para letra "Alive"', () => {
+  });
+  it('debería devolver false para letra "Dead"', () => {
+  });
+});
 });

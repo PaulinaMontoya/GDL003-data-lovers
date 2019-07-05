@@ -65,6 +65,11 @@ const filtrado = () => {
       const statusUnknown = data.filter(filterUnknown => (filterUnknown.status == "unknown"));
       return statusUnknown;
     },
+    computeStatsAll:(data) =>{
+      //let data = RICKANDMORTY.results;
+      const statsAll = data.filter(filterAll => (filterAll.status == "Alive","Dead","unknown"));
+        return statsAll.length;
+      },
     computeStatsAlive:(data) =>{
     //let data = RICKANDMORTY.results;
     const statsAlive = data.filter(filterAlive => (filterAlive.status == "Alive"));
