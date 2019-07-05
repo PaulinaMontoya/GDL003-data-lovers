@@ -17,14 +17,14 @@ const filtrado = () => {
   
  window.data = {
  
-   allCharacters:() => {
-    fullData = RICKANDMORTY.results;
-      return fullData;
+   allCharacters:(data) => {
+    //fullData = RICKANDMORTY.results;
+      return data;
       },
 
-      orderAz:() =>{
-      let names = RICKANDMORTY.results;
-      let sortAz = names.sort((a, b) => {
+      orderAz:(data) =>{
+      //let names = RICKANDMORTY.results;
+      let sortAz = data.sort((a, b) => {
         if (a.name < b.name) {
           return -1;
         }
@@ -36,47 +36,47 @@ const filtrado = () => {
       });
       return sortAz;
     },
-    orderZa:() =>{
-      let names = RICKANDMORTY.results;
-     let sortZa = names.reverse((a, b) => {
-        if (a.name < b.name) {
-          return -1;
-        }  
+    orderZa:(data) =>{
+     // let names = RICKANDMORTY.results;
+     let sortZa = data.sort((b, a) => {
         if (a.name > b.name) {
-        return 1;
+          return 1;
+        }  
+        if (a.name < b.name) {
+        return -1;
       } else {
         return 0;
       }
     });
     return sortZa;
     },
-    filterAlive: () => {
-      let alive = RICKANDMORTY.results;
-      const statusAlive = alive.filter(filterAlive => (filterAlive.status == "Alive"));
+    filterAlive: (data) => {
+      //let alive = RICKANDMORTY.results;
+      const statusAlive = data.filter(filterAlive => (filterAlive.status == "Alive"));
       return statusAlive;
     },
-    filterDead: () => {
-      let dead = RICKANDMORTY.results;
-      const statusDead = dead.filter(filterDead => (filterDead.status == "Dead"));
+    filterDead: (data) => {
+      //let dead = RICKANDMORTY.results;
+      const statusDead = data.filter(filterDead => (filterDead.status == "Dead"));
       return statusDead;
     },
-    filterUnknown: () => {
-      let unknown = RICKANDMORTY.results;
-      const statusUnknown = unknown.filter(filterUnknown => (filterUnknown.status == "unknown"));
+    filterUnknown: (data) => {
+     // let unknown = RICKANDMORTY.results;
+      const statusUnknown = data.filter(filterUnknown => (filterUnknown.status == "unknown"));
       return statusUnknown;
     },
-    computeStatsAlive:() =>{
-    let data = RICKANDMORTY.results;
+    computeStatsAlive:(data) =>{
+    //let data = RICKANDMORTY.results;
     const statsAlive = data.filter(filterAlive => (filterAlive.status == "Alive"));
       return statsAlive.length;
     },
-    computeStatsDead:() =>{
-      let data = RICKANDMORTY.results;
+    computeStatsDead:(data) =>{
+      //let data = RICKANDMORTY.results;
       const statsDead = data.filter(filterDead => (filterDead.status == "Dead"));
         return statsDead.length;
       },
-    computeStatsUnknown:() =>{
-      let data = RICKANDMORTY.results;
+    computeStatsUnknown:(data) =>{
+      //let data = RICKANDMORTY.results;
       const statsUnknown = data.filter(filterUnknown => (filterUnknown.status == "unknown"));
         return statsUnknown.length;
       },
